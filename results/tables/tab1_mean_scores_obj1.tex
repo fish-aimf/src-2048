@@ -1,0 +1,32 @@
+\begin{table*}[t]
+\centering\small
+\caption{Mean final score by solver and board, Objective 1 (higher is better). Bold: best on that board. $^\dagger$: fewer than 5{,}000 games (n given in Appendix). --: not run. k = $\times10^3$, M = $\times10^6$.}
+\label{tab:mean_obj1}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Solver & 3$\times$3 & 3$\times$4 & 4$\times$3 & 3$\times$5 & 4$\times$4 & 4$\times$5 & 5$\times$5 \\
+\midrule
+mcts\_3000\_tpu & \textbf{1{,}498} & \textbf{9{,}722}$^\dagger$ & -- & -- & -- & -- & -- \\
+mcts\_1000 & 1{,}405 & 9{,}065 & \textbf{8{,}972} & \textbf{38.6k} & \textbf{62.9k} & \textbf{343.7k} & \textbf{1.96M}$^\dagger$ \\
+mcts\_300 & 1{,}193 & 7{,}230 & 7{,}142 & 30.1k & 52.5k & 267.5k & 1.71M$^\dagger$ \\
+expectimax\_d7 & 1{,}420 & 5{,}317 & 5{,}318 & 20.6k & 27.6k & 160.9k & 1.44M$^\dagger$ \\
+expectimax\_d8 & 1{,}351 & 5{,}257 & 5{,}219 & -- & -- & -- & -- \\
+minimax\_d7 & 1{,}309 & 4{,}177 & 4{,}112 & -- & 18.1k & -- & -- \\
+expectimax\_d5 & 1{,}109 & 3{,}888 & 3{,}928 & 13.2k & 18.7k & 96.3k & 751.6k \\
+minimax\_d8 & 1{,}280 & 4{,}019 & 4{,}062 & -- & 17.9k & -- & -- \\
+mcts\_60 & 822 & 3{,}785 & 3{,}860 & 15.2k & 23.3k & 112.5k & 661.8k \\
+expectimax\_d6 & 1{,}075 & 3{,}837 & 3{,}809 & 13.0k & 17.8k & 93.1k & 726.0k \\
+minimax\_d5 & 1{,}134 & 3{,}473 & 3{,}479 & 11.0k & 14.9k & 69.7k & 470.5k \\
+minimax\_d6 & 1{,}122 & 3{,}456 & 3{,}397 & 10.8k & 14.8k & 67.4k & 458.6k \\
+minimax\_d3 & 977 & 2{,}887 & 2{,}843 & 8{,}458 & 11.5k & 47.2k & 286.1k \\
+minimax\_d5\_full & 974 & 3{,}208 & 3{,}234 & -- & 14.8k & -- & -- \\
+expectimax\_d3 & 931 & 2{,}740 & 2{,}754 & 8{,}309 & 11.2k & 49.7k & 321.1k \\
+expectimax\_d4 & 912 & 2{,}737 & 2{,}751 & 8{,}411 & 11.3k & 48.9k & 308.7k \\
+minimax\_d4 & 910 & 2{,}698 & 2{,}761 & 8{,}145 & 11.0k & 46.2k & 277.5k \\
+expectimax\_d2 & 504 & 1{,}834 & 1{,}744 & 4{,}901 & 8{,}368 & 28.1k & 130.8k \\
+greedy & 523 & 1{,}800 & 1{,}762 & 4{,}684 & 7{,}833 & 26.4k & 119.0k \\
+minimax\_d2 & 495 & 1{,}695 & 1{,}656 & 4{,}485 & 7{,}772 & 26.4k & 121.3k \\
+random & 177 & 409 & 411 & 831 & 1{,}106 & 2{,}617 & 7{,}793 \\
+\bottomrule
+\end{tabular}
+\end{table*}

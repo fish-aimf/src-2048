@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering\small
+\caption{Effect of one extra ply of search, split by whether the step adds a player move (even$\to$odd depth) or only a spawn layer (odd$\to$even). $|r|$: mean absolute rank-biserial correlation over boards; $\Delta$: median \% change in mean score; last column: \% change attributable to the extra spawn layer in $\log(\text{score}) \sim \text{board}\times\text{player moves} + \text{even}$ (95\% CI, HC3 errors).}
+\label{tab:pairing}
+\resizebox{\columnwidth}{!}{\begin{tabular}{llrrrrl}
+\toprule
+Obj. & Family & \multicolumn{2}{c}{odd$\to$even} & \multicolumn{2}{c}{even$\to$odd} & Even-depth effect \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+ & & $|r|$ & $\Delta$ & $|r|$ & $\Delta$ & \\
+\midrule
+1 & expectimax & 0.040 & -1.4\% & 0.570 & +57.9\% & -0.3\% [-0.7, +0.1] \\
+1 & minimax & 0.041 & -2.5\% & 0.457 & +41.4\% & -2.7\% [-3.1, -2.4] \\
+2 & expectimax & 0.040 & +1.5\% & 0.281 & -22.6\% & +1.6\% [+1.2, +1.9] \\
+2 & minimax & 0.018 & -0.6\% & 0.255 & -14.7\% & -1.4\% [-1.8, -1.0] \\
+\bottomrule
+\end{tabular}}
+\end{table}

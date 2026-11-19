@@ -1,0 +1,22 @@
+# game engine and solvers
+numpy
+numba
+
+# running across machines
+flask
+waitress
+requests
+psutil
+
+# analysis
+pandas
+scipy
+statsmodels
+scikit-posthocs
+matplotlib
+
+# optional: MCTS-3000 on a TPU
+# jax
+
+# optional: neural network prototype
+# torch

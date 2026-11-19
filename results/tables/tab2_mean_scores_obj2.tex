@@ -1,0 +1,32 @@
+\begin{table*}[t]
+\centering\small
+\caption{Mean final score by solver and board, Objective 2 (lower is better). Bold: best on that board. $^\dagger$: fewer than 5{,}000 games (n given in Appendix). --: not run. k = $\times10^3$, M = $\times10^6$.}
+\label{tab:mean_obj2}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Solver & 3$\times$3 & 3$\times$4 & 4$\times$3 & 3$\times$5 & 4$\times$4 & 4$\times$5 & 5$\times$5 \\
+\midrule
+expectimax\_d9 & \textbf{25.8} & \textbf{58.1} & \textbf{58.0} & \textbf{94.4} & \textbf{95.4} & \textbf{175} & \textbf{330} \\
+expectimax\_d10 & 28.8 & 60.3 & 60.6 & 98.3 & 97.7 & 177 & 335 \\
+expectimax\_d7 & 29.3 & 62.4 & 62.5 & 103 & 108 & 202 & 385 \\
+expectimax\_d8 & 33.1 & 63.3 & 64.1 & 107 & 113 & 208 & 391 \\
+minimax\_d7 & 35.4 & 65.3 & 65.3 & 110 & 124 & 223 & 410 \\
+minimax\_d8 & 35.2 & 66.1 & 65.7 & 110 & 124 & 221 & 410 \\
+expectimax\_d5 & 40.7 & 68.3 & 67.9 & 124 & 133 & 242 & 458 \\
+minimax\_d6 & 38.2 & 76.3 & 75.5 & 124 & 137 & 247 & 455 \\
+minimax\_d5 & 38.2 & 76.3 & 75.7 & 123 & 138 & 248 & 458 \\
+expectimax\_d6 & 40.3 & 73.4 & 72.8 & 127 & 136 & 248 & 467 \\
+minimax\_d4 & 37.0 & 87.0 & 83.8 & 146 & 162 & 299 & 553 \\
+minimax\_d3 & 36.5 & 87.9 & 84.0 & 147 & 164 & 299 & 557 \\
+expectimax\_d4 & 41.1 & 93.3 & 92.5 & 164 & 173 & 323 & 619 \\
+expectimax\_d3 & 41.5 & 94.2 & 93.0 & 163 & 173 & 322 & 621 \\
+minimax\_d2 & 84.4 & 143 & 141 & 240 & 258 & 458 & 833 \\
+mcts\_1000 & 137 & 212 & 210 & 263 & 317 & 275 & 416 \\
+expectimax\_d2 & 85.3 & 144 & 141 & 243 & 262 & 465 & 834 \\
+greedy & 91.0 & 149 & 149 & 251 & 268 & 473 & 847 \\
+mcts\_300 & 135 & 223 & 219 & 320 & 386 & 379 & 552 \\
+mcts\_60 & 134 & 235 & 239 & 401 & 492 & 702 & 1{,}086 \\
+random & 177 & 417 & 415 & 835 & 1{,}094 & 2{,}612 & 7{,}812 \\
+\bottomrule
+\end{tabular}
+\end{table*}
